@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Vé Máy Bay</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="themve.js"></script>
+    <link rel="stylesheet" href="themve.css">
+</head>
+<body>
+    <header>
+        <h1>Thêm Vé Máy Bay</h1>
+    </header>
+
+    <form id="addFlightForm">
+        <label for="from">Nơi Đi:</label>
+        <input type="text" id="from" name="from" required>
+
+        <label for="to">Nơi Đến:</label>
+        <input type="text" id="to" name="to" required>
+
+        <label for="departureDate">Ngày Đi:</label>
+        <input type="date" id="departureDate" name="departureDate" required>
+
+        <label for="airline">Hãng Hàng Không:</label>
+        <select id="airline" name="airline" required>
+            <option value="Vietnam Airlines">Vietnam Airlines</option>
+            <option value="Bamboo Airways">Bamboo Airways</option>
+            <option value="Vietjet Air">VietJet Air</option>
+        </select>   
+
+        <label for="price">Giá:</label>
+        <input type="number" id="price" name="price" min="0" required>
+
+        <button type="submit">Thêm Vé Máy Bay</button>
+    </form>
+
+    <footer>
+        <p>© Hệ thống vé máy bay Minh Hoài hân hạnh.</p>
+    </footer>       
+</body>
+</html>
